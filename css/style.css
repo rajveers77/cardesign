@@ -1,0 +1,237 @@
+ 
+ 
+ 
+ 
+
+body {
+    font-family: "Open Sans";
+}
+
+.no-margin {
+    margin: 0px;
+}
+
+.no-padding {
+    padding: 0px;
+}
+
+
+
+
+.main-bg {
+    background: url(../images/bg-main.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.slide-item-image img {
+    width: 100%!important;
+    margin: 0 auto;
+}
+.banner-slider {
+    height: 100vh;
+}
+.slide-item {
+    height: 100vh;
+}
+.slider-overlay {
+    position: absolute;
+    width: 100%;
+    bottom: 43px;
+    left: 55px;
+}
+.slider-overlay h2,.slider-overlay h3{color:#7f7f7f;}
+.slider-overlay h2:before {
+    background: #8c6239;
+    height: 2px;
+    width: 72px;
+    position: absolute;
+    content: "";
+    bottom: -3px;
+}
+
+.slider-overlay h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    position: relative;
+}
+.top-car-title h2 {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 28px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 80px;
+}
+.slider-overlay h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+.top-car-title h1 {
+    color: #1a262e;
+    font-weight: bold;
+    font-size: 104px;
+    letter-spacing: 14px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+	top: 32px;
+}
+a.logo img {
+    margin: 38px 0px 0px 38px;
+}
+.owl-dots {
+    display: block!important;
+}
+.owl-dots {
+    display: block!important;
+    position: absolute;
+    right: 38px;
+    bottom: 23%;
+    margin-right: 10px;
+}
+.owl-nav {
+    display: none;
+}
+button.owl-dot {
+    
+    height: 24px;
+    width: 63px;
+    display: table;
+    margin-top: 23px;
+    background-repeat: no-repeat;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+button.owl-dot.active{
+	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+.owl-dots button:nth-child(1) {background: url(../images/list-1-image.png)!important;}
+.owl-dots button:nth-child(2) {background: url(../images/list-2-image.png)!important;}
+.owl-dots button:nth-child(3) {background: url(../images/list-3-image.png)!important;}
+
+
+
+
+
+
+
+
+
+
+
+/* mob-menu */
+.hamburger-menu-button {
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+    display: block;
+    position: relative;
+    margin-top: 35px;
+    z-index: 100;
+    background: #8c6239;
+    /* border: 5px solid white; */
+    box-sizing: content-box;
+    border-radius: 50%;
+    text-indent: 100%;
+    color: transparent;
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+}
+.hamburger-menu-button-open {
+  top: 50%;
+  margin-top: -1px;
+  left: 50%;
+  margin-left: -12px;
+}
+.hamburger-menu-button-open, 
+.hamburger-menu-button-open::before, 
+.hamburger-menu-button-open::after {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.hamburger-menu-button-open::before, 
+.hamburger-menu-button-open::after {
+  left: 0;
+  content: "";
+}
+.hamburger-menu-button-open::before {
+  top: 6px;
+}
+.hamburger-menu-button-open::after {
+  bottom: 6px;
+}
+.hamburger-menu-button-close {
+          background: transparent;  
+          transform: rotate(180deg);
+}
+.hamburger-menu-button-close::before {  
+          transform: translateY(-6px) rotate(45deg);
+}
+.hamburger-menu-button-close::after {   
+          transform: translateY(6px) rotate(-45deg);
+}
+.ham-menu {
+  position: absolute;
+  top: 42px;
+  left: 40px;
+  margin: auto;
+  max-width: 590px;
+  overflow: hidden;
+}
+.ham-menu ul {    
+    transform: translateX(-110%);
+    background-color: yellow; 
+    color: black;
+    transition: all 0.5s ease-in-out;
+    margin-left: -40px;
+}
+.ham-menu.on ul {  
+          transform: translateX(0px);
+}
+.ham-menu ul {
+  font-size: 0;
+}
+.ham-menu ul li {
+  display: inline-block;
+}
+.ham-menu ul li:first-child .ham-menu ul li a {
+  padding-left: 30px;
+}
+.ham-menu ul li a {
+  padding: 15px;
+  display: block;
+  background-color: transparent;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;  
+  transition: all 0.2s ease-in-out;
+  font-size: 13px;
+}
+.ham-menu ul li.active a, .ham-menu ul li a:hover {
+    background-color: #6d4f32;
+    color: #fff !important;
+	text-decoration:none;
+}
+button#hamburger-menu {
+    float: right;
+    margin: 36px 20px 0px 0px;
+}
+button:focus{outline:none;}
+.header {
+    position: absolute;
+    width: 100%;
+}
+/* mob-menu */
+ 

@@ -1,0 +1,142 @@
+@media (min-width: 1500px) and (max-width: 5000px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+ .sidemenudesktop,.desktop-header {
+    display: none;
+}
+ .mobile-header {
+    display: block;
+}
+.sidemenumobile {
+    display: block;
+}
+.sidemenumobile {
+    display: block;
+    left: 0px;
+}
+body.open .sidemenumobile {
+    display: block;
+    left: -94px;
+}
+.main-wrapper .container-fluid {
+    width: 100%;
+    margin: 0px 2px auto 0px;
+}
+body.open .left-search-top {
+    margin-left: 0px;
+    width: 100%;
+}
+a.mobilelogo {
+    width: 82%;
+}
+.left-search-top {
+    margin-left: 0px;
+}
+header {
+    padding: 8px 20px;
+}
+a.mobilelogo img {
+    width: 148px;
+}
+.container-fluid.mobile-header {
+    padding: 0px;
+}
+a.btn-sidemenu {
+    margin-top: 9px;
+    margin-right: 12px;
+}
+ul.sidenavbarul li {
+    padding: 10px 86px 10px 27px;
+    border-bottom: 1px solid #dadada;
+}
+ul.sidenavbarul li a img {
+    width: 21px;
+    margin-right: 17px;
+}
+ul.sidenavbarul li a {
+    font-size: 15px;
+    font-weight: 400;
+    color: #82859e;
+}
+.user-profile-img.float-left img {
+    width: 62px;
+    margin-right: 4px;
+}
+.profile-img-edit {
+    padding-right: 0px;
+}
+.user-profile-img {
+    margin-left: 17px;
+}
+.status-challangepost .nav-fill .nav-item {
+    padding: 10px 0px;
+    width: 50%;
+}
+.user-details {
+    margin-top: 12px;
+}
+.status-challange-writebox.d-flex {
+    display: unset!important;
+}
+.lft-usrwrite {
+    width: 65px;
+    margin-right: 0px;
+    float: none;
+}
+.right-usrwrite {
+    width: 100%;
+    float: left;
+}
+.lft-usrwrite {
+    width: 100px;
+    margin-right: 0px;
+    float: none;
+    padding: 0px 15px;
+}
+.brdr-topsatus {
+    padding: 16px 7px 3px;
+}
+.right-usrwrite textarea {
+    height: 86px;
+}
+.status-challangepost .tab-content {
+    padding: 2px 0px 0px 0px!important;
+}
+.edit-profile-box.text-right.m-t-84 {
+    margin-right: 15px;
+}
+.first-comment-inner p {
+    padding: 9px 0px 9px 0px;
+}
+span.howmanyfriends {
+    font-size: 50px;
+    height: 117px;
+    padding-top: 23px;
+}
+button.reply-btn {
+    right: 18px;
+}
+.navbar-toggler-icon {
+    width: 100%;
+    color: #6e972f;
+}
+.navbarpages {
+    padding: 16px 0px 0px;
+    margin-left: 6px;
+}
+button:focus {
+    outline: 0px;
+}
+ul.navbar-nav {
+    padding-left: 12px;
+}
+.m-t-84 {
+    margin-top: 39px;
+}
+}

@@ -1,0 +1,163 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>       
+      <title>Home</title>
+  
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Poppins:400,500,700&display=swap" rel="stylesheet">
+      
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+     
+   </head>
+   <body>
+      <div class="main-bg">
+      <!-- header Section Starts-->
+      <header>
+         <div class="header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-7 text-left">
+                     <a class="logo" href="#"><img src="images/logo.png"></a>
+                  </div>
+                  <div class="col-md-5 text-right">
+                    
+                     <div class="tabs-wrapper">
+                        <button id="hamburger-menu" data-toggle="ham-navigation" class="hamburger-menu-button">
+                        <span class="hamburger-menu-button-open">Menu</span>
+                        </button>
+                        
+                        <nav id="ham-navigation" class="ham-menu">
+                           <ul class="menu">
+                              <li class="active"><a href="#">Home</a></li>
+                              <li class=""><a href="#">About</a></li>
+                              <li><a href="#">Services</a></li>
+                              <li><a href="#">Features</a></li>
+                              <li><a href="#">Team</a></li>
+                           </ul>
+                        </nav>
+                     </div>
+                     
+                     
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- Header ends -->
+      <!-- banner start -->
+      <div class="banner-slider">
+         <div class="slider-wrapper singlepage">
+            <div id="owl-bannner" class="owl-carousel own-slider-class">
+               <div class="slide-item">
+                  <div class="top-car-title">
+                     <h1>1932</h1>
+                     <h2>Vintage Car</h2>
+                  </div>
+                 
+                  <div class="slide-item-image">
+                     <img src="images/y.png">
+                  </div>
+                  <div class="slider-overlay">
+                     <h2>01</h2>
+                     <h3>Design : <span>Cagatay Han</span></h3>
+                     <h3>Project Name : <span>Vintage Car 1938</span></h3>
+                  </div>
+               </div>
+               <div class="slide-item">
+                  <div class="top-car-title">
+                     <h1>1932</h1>
+                     <h2>Vintage Car</h2>
+                  </div>
+                  <div class="slide-item-image">
+                     <img src="images/slider-1.png">
+                  </div>
+                  <div class="slider-overlay">
+                     <h2>02</h2>
+                     <h3>Design : <span>Cagatay Han</span></h3>
+                     <h3>Project Name : <span>Vintage Car 1938</span></h3>
+                  </div>
+               </div>
+               <div class="slide-item">
+                  <div class="top-car-title">
+                     <h1>1932</h1>
+                     <h2>Vintage Car</h2>
+                  </div>
+                  <br>
+                  <div class="slide-item-image">
+                     <img src="images/u.png">
+                  </div>
+                  <div class="slider-overlay">
+                     <h2>03</h2>
+                     <h3>Design : <span>Cagatay Han</span></h3>
+                     <h3>Project Name : <span>Vintage Car 1938</span></h3>
+                  </div>
+               </div>
+            </div>
+			 
+         </div>
+      </div>
+      <!-- banner end -->
+      <script src="js/jquery.min.js "></script>     
+      <script src="js/owl.carousel.min.js"></script>
+     
+      <script>
+         $('#owl-bannner').owlCarousel({
+             loop: true,
+             margin: 10,
+             autoplay: true,
+             autoplayTimeout: 8000,
+             nav: true,
+         dots: true,
+         autoplayHoverPause: true, // Stops autoplay
+             navigation: true,
+             responsiveClass: true,
+             responsive: {
+                 0: {
+                     items: 1,
+                     nav: true
+                 },
+                 600: {
+                     items: 1,
+                     nav: false
+                 },
+                 1000: {
+                     items: 1,
+                     nav: true,
+                     loop: false
+                 }
+             }
+         })
+         $(function(e) {
+   
+});
+      </script>
+      <script>
+         var button = document.getElementById('hamburger-menu'),
+            span = button.getElementsByTagName('span')[0];
+         
+         button.onclick =  function() {
+          span.classList.toggle('hamburger-menu-button-close');
+         };
+         
+         $('#hamburger-menu').on('click', toggleOnClass);
+         
+         function toggleOnClass(event) {
+          var toggleElementId = '#' + $(this).data('toggle'),
+          element = $(toggleElementId);
+         
+          element.toggleClass('on');
+         
+         }
+         
+         // close hamburger menu after click a
+         $( '.menu li a' ).on("click", function(){
+          $('#hamburger-menu').click();
+         });
+         
+         
+      </script>
+   </body>
+</html>
